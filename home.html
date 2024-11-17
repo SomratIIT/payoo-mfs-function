@@ -33,7 +33,7 @@
 
 <!-- Feature End -->
   <!-- Add Money Starts -->
-  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+  <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
     <form class="card-body">
       <div class="form-control">
         <label class="label">
@@ -57,21 +57,27 @@
   <!-- Cash out Starts -->
   <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
     <form class="card-body">
+     <!--  <div class="form-control">
+        <label class="label">
+          <span class="label-text">Enter Agent's Number</span>
+        </label>
+        <input id="11 digit number" type="number" placeholder="enter amount" class="input input-bordered" required autocomplete="on"/>
+      </div> -->
       <div class="form-control">
         <label class="label">
-          <span class="label-text">Add Money Amount</span>
+          <span class="label-text">CashOut Amount</span>
         </label>
-        <input id="input-add-money" type="number" placeholder="enter amount" class="input input-bordered" required autocomplete="on"/>
+        <input id="input-cash-out" type="number" placeholder="enter amount" class="input input-bordered" required autocomplete="on"/>
       </div>
       <div class="form-control">
         <label class="label">
           <span class="label-text">Pin</span>
         </label>
-        <input id="input-pin-number" type="password" placeholder="enter pin" class="input input-bordered" required autocomplete="off" />
+        <input id="input-cash-out-pin" type="password" placeholder="enter pin" class="input input-bordered" required autocomplete="off" />
       
       </div>
       <div class="form-control mt-6">
-        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+        <button id="btn-cash-out" class="btn btn-primary">cash Out</button>
       </div>
     </form>
   </div>
@@ -87,6 +93,6 @@
 
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
-    
+    <script src="js/cashOut.js"></script>
 </body>
 </html>
