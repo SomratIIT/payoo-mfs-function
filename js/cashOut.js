@@ -17,6 +17,6 @@ document.getElementById('btn-cash-out').addEventListener('click',function(event)
     }
 
     else{
-        alert('Get Out');
+        alert('Get Lost');
     }
 })
