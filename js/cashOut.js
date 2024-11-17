@@ -14,7 +14,18 @@ document.getElementById('btn-cash-out').addEventListener('click',function(event)
         const newBalance = balance - cashOut ;
 
         document.getElementById('account-balance').innerText = newBalance;
-    }
+
+
+
+        const q = document.createElement('q');
+        q.innerText = `Cash_out: ${cashOut} Tk. New_Balance: ${newBalance}`;
+        console.log(q.innerText);
+
+
+
+document.getElementById('transaction-container').appendChild(q);
+}
+    
 
     else{
         alert('Get Lost');

@@ -21,7 +21,15 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
      document.getElementById('account-balance').innerText=totalBalance; 
 
- 
+//  Add to Transaction History
+
+                      const p = document.createElement('p');
+                      p.innerText = `Added: ${addMoney} Tk. New_Balance: ${totalBalance}`;
+                      console.log(p.innerText);
+
+
+
+document.getElementById('transaction-container').appendChild(p);
  }
 
  else{
